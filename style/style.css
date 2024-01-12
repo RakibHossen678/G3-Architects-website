@@ -43,7 +43,7 @@ nav div h2 {
 }
 
 .img {
-   
+
     margin: 0 200px 45px;
 
 }
@@ -87,53 +87,62 @@ nav div h2 {
     cursor: pointer;
 
 }
-.btn:hover{
+
+.btn:hover {
     background: transparent;
     color: #FF900E;
     border: 2px solid #FF900E;
 }
 
-main{
+main {
     max-width: 1400px;
-    margin:80px auto 100px ;
+    margin: 80px auto;
 }
-.teams_container{
+
+.teams_container {
     display: flex;
     align-items: center;
-    
+
 }
-.teams_img{
+
+.teams_img {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-.teams_img img{
+
+.teams_img img {
     height: 300px;
 }
-.teams_content{
-    padding:0 70px;
+
+.teams_content {
+    padding: 0 70px;
 }
-.teams_content h3{
+
+.teams_content h3 {
     color: var(--Dark-03, #727272);
-font-size: 45px;
-font-weight: 500;
+    font-size: 45px;
+    font-weight: 500;
 }
-.black{
+
+.black {
     color: var(--Dark-01, #131313);
     font-weight: 700;
 
 }
-.yellow{
+
+.yellow {
     color: #FF900E;
     font-weight: 700;
 
 }
-.teams_container p{
+
+.teams_container p {
     color: var(--Dark-03, #727272);
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-margin:15px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 15px 0;
 }
 
 
@@ -147,24 +156,42 @@ margin:15px 0;
 
 /* resoponsive design */
 @media screen and (max-width:576px) {
-    nav{
+    nav {
         padding: 20px;
         flex-direction: column;
     }
-    nav ul li{
+
+    nav ul li {
         margin: 10px;
     }
-    .banner{
+
+    .banner {
         padding: 20px;
     }
+
     .img {
         margin: 10px;
     }
-    
+    .teams_img{
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 30px;
+    }
+    .teams_container{
+        flex-direction: column;
+    }
+
 }
+
 @media screen and (min-width:576px) and (max-width:992px) {
-    nav{
+    nav {
         padding: 50px;
         flex-direction: column;
+    }
+    .teams_container{
+        flex-direction: column;
+        
+    }
+    .teams_img{
+        margin-bottom: 30px;
     }
 }
