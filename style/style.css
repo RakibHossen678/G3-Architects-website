@@ -92,6 +92,59 @@ nav div h2 {
     color: #FF900E;
     border: 2px solid #FF900E;
 }
+
+main{
+    max-width: 1400px;
+    margin:80px auto 100px ;
+}
+.teams_container{
+    display: flex;
+    align-items: center;
+    
+}
+.teams_img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.teams_img img{
+    height: 300px;
+}
+.teams_content{
+    padding:0 70px;
+}
+.teams_content h3{
+    color: var(--Dark-03, #727272);
+font-size: 45px;
+font-weight: 500;
+}
+.black{
+    color: var(--Dark-01, #131313);
+    font-weight: 700;
+
+}
+.yellow{
+    color: #FF900E;
+    font-weight: 700;
+
+}
+.teams_container p{
+    color: var(--Dark-03, #727272);
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+margin:15px 0;
+}
+
+
+
+
+
+
+
+
+
+
 /* resoponsive design */
 @media screen and (max-width:576px) {
     nav{
@@ -108,4 +161,10 @@ nav div h2 {
         margin: 10px;
     }
     
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav{
+        padding: 50px;
+        flex-direction: column;
+    }
 }
